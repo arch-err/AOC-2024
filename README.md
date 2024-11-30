@@ -1,5 +1,6 @@
 # AOC-2024
 **Advent of Code 2024**
+
 [Link](https://adventofcode.com/)
 
 ## Challenges
