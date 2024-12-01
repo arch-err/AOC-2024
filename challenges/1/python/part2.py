@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-with open("../input", "r") as f:
+with open("../input/2/input", "r") as f:
     lines = f.readlines()
 
 c1 = []
@@ -15,6 +15,7 @@ c1.sort()
 c2.sort()
 
 for i in range(len(c1)):
-    tot += abs(c2[i] - c1[i])
+    n = c1[i]
+    tot += n*c2.count(n)
 
 print(tot)

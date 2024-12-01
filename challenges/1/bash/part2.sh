@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-input="../input/1/input"
+input="../input/2/input"
 
 grep -oP "^\d+" $input | sort > tmp1
 grep -oP "\d+$" $input | sort > tmp2
@@ -10,9 +10,10 @@ for i in $(seq $(cat tmp1 | wc -l))
 do
 	i1=$(sed -n "$i"p tmp1)
 	i2=$(sed -n "$i"p tmp2)
-	distance=$(( $i2 - $i1 ))
-	distance=${distance#-} # Absolute value of distance
-	tot=$((tot+$distance))
+	n=$(grep "$i1" tmp2 | wc -l)
+
+	sc=$(( $i1 * $n ))
+	tot=$((tot+$sc))
 done
 
 rm tmp*
