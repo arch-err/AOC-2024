@@ -20,7 +20,6 @@ for line in lines:
 
     for i in range(len(sorted_report)-1):
         diff = sorted_report[i+1] - sorted_report[i]
-        if sorted_report[i] == 2:
 
         if diff > 3 or diff < 1:
             report_fail = True
