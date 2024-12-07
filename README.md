@@ -1,7 +1,6 @@
 ![logo](./assets/logo.png)
 
-# AOC-2024
-**Advent of Code 2024**
+# Advent of Code 2024
 
 [adventofcode.com](https://adventofcode.com/)
 
